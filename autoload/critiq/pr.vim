@@ -3,7 +3,7 @@
 
 fu! s:call_provider(function_name, args)
 	" TODO: determine provider through tab local variable?
-	let provider_name = 'github'
+	let provider_name = 'bitbucket'
 	return call('critiq#providers#'.provider_name.'#request', [a:function_name, a:args])
 endfu
 
